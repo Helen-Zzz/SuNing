@@ -1,0 +1,450 @@
+body {
+  background: #fff;
+}
+
+.w {
+  width: 990px;
+  margin: auto;
+}
+
+nav.top {
+  height: 35px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #eee;
+}
+
+nav.top .w {
+  line-height: 35px;
+  clear: both;
+  position: relative;
+  z-index: 200;
+}
+
+nav.top .w ul {
+  position: relative;
+}
+
+nav.top .w ul li {
+  color: #666;
+  border: 1px solid transparent;
+  padding-left: 5px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+nav.top .w ul li:hover {
+  color: #f70;
+}
+
+nav.top .w ul li:hover a {
+  color: #f70;
+}
+
+nav.top .w ul li.shou span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+nav.top .w ul .write {
+  position: relative;
+}
+
+nav.top .w ul .write .icon-right {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  top: 11px;
+  right: 5px;
+  font-size: 12px;
+  color: #bbb;
+  transition: all 0.5s;
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+
+nav.top .w ul .write:hover {
+  background: #fff;
+  border-color: #eee;
+  border-bottom: 1px solid #fff;
+  height: 35px;
+}
+
+nav.top .w ul .write:hover span {
+  transform: rotate(0deg);
+}
+
+nav.top .w ul .write:hover::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background: #fff;
+}
+
+nav.top .w ul .r li.cart {
+  padding-left: 20px;
+}
+
+nav.top .w ul .r li.cart span.icon-gouwuche {
+  left: 5px;
+  color: #f70;
+  transform: rotate(0deg);
+}
+
+nav.top .w ul .write div.sec {
+  display: none;
+  background: #fff;
+  margin: auto;
+  padding: 10px;
+  top: 35px;
+  left: -1px;
+  border: 1px solid #eee;
+}
+
+nav.top .w ul .write div.sec div {
+  border-right: 1px solid #eee;
+  padding-left: 10px;
+}
+
+nav.top .w ul .write div.sec div h3 {
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+nav.top .w ul .write div.sec div a {
+  color: #666;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  width: 80px;
+  text-indent: 5px;
+  position: relative;
+}
+
+nav.top .w ul .write div.sec div a:hover {
+  color: #f70;
+}
+
+nav.top .w ul .write div.sec div a .icon-re {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  color: #f44;
+  font-size: 16px;
+  top: -5px;
+  right: 15px;
+}
+
+nav.top .w ul .write div.sec > div:last-of-type {
+  border: none;
+}
+
+nav.top .w ul .write div.one {
+  width: 920px;
+}
+
+nav.top .w ul .write div.one div {
+  width: 170px;
+}
+
+nav.top .w ul .write div.two {
+  width: 170px;
+}
+
+nav.top .w ul .write div.two div {
+  width: 170px;
+}
+
+nav.top .w ul .write div.tre {
+  width: 174px;
+  left: -117px;
+}
+
+nav.top .w ul .write div.tre div a span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: #f70;
+  font-size: 20px;
+  top: 0;
+  right: 10px;
+}
+
+nav.top .w ul .write div.rOne {
+  width: 58px;
+}
+
+nav.top .w ul .write div.rOne div {
+  padding: 0;
+}
+
+nav.top .w ul .write div.rTwo {
+  width: 180px;
+}
+
+nav.top .w ul .write div.rTwo p {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #333;
+  text-indent: 10px;
+}
+
+nav.top .w ul .write div.rTwo p span {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+nav.top .w ul .write div.rTwo > span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  color: #f70;
+  font-size: 16px;
+  top: 0;
+  right: 10px;
+}
+
+nav.top .w ul .write div.rTre {
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+}
+
+nav.top .w ul .write div.rTre h5 {
+  margin: 100px auto 0;
+}
+
+nav.top .w ul .write div.rTre p {
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav.top .w ul .write div.rTre span {
+  display: block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  background: #f70;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  border-radius: 5px;
+}
+
+nav.top .w ul .write div.rFou {
+  width: 400px;
+  left: -343px;
+  text-align: center;
+}
+
+nav.top .w ul .write div.rFou div figure {
+  width: 120px;
+  text-align: center;
+  margin: 5px;
+}
+
+nav.top .w ul .write div.rFou div figure img {
+  width: 80px;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+nav.top .w ul .write div.rFou div figure p {
+  color: #666;
+  line-height: 20px;
+}
+
+nav.top .w ul li.loca div.loca {
+  display: none;
+  background: #fff;
+  width: 360px;
+  margin: auto;
+  padding: 10px;
+  top: 35px;
+  left: -1px;
+  border: 1px solid #eee;
+}
+
+nav.top .w ul li.loca div.loca div {
+  background: #fff;
+}
+
+nav.top .w ul li.loca div.loca div a {
+  color: #666;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  margin: 0 20px;
+  padding: 0 5px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+nav.top .w ul li.loca div.loca div a:hover {
+  color: #fff;
+  background: #f709;
+  border-radius: 5px;
+}
+
+header {
+  height: 100px;
+}
+
+header div.w a.logo {
+  display: block;
+  margin: 5px 0;
+  width: 190px;
+  height: 90px;
+  background: url(../resource/imgs/logo.png) no-repeat;
+  background-size: cover;
+}
+
+header div.w .search {
+  width: 440px;
+  height: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+header div.w .search span {
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  left: 3px;
+  font-size: 18px;
+  color: #666;
+}
+
+header div.w .search input[type="text"] {
+  width: 350px;
+  height: 30px;
+  text-indent: 40px;
+  border: 2px solid #f80;
+  box-sizing: border-box;
+}
+
+header div.w .search input[type="submit"] {
+  width: 90px;
+  height: 30px;
+  background: #f80;
+  color: #fff;
+  font-size: 18px;
+}
+
+header div.w .search input[type="submit"]:hover {
+  background: #f70;
+}
+
+main {
+  margin-top: 5px;
+  height: 266px;
+}
+
+main div.w {
+  height: 266px;
+}
+
+main div.w div.left {
+  margin-top: 80px;
+  margin-left: 50px;
+  width: 250px;
+  height: 170px;
+  background: url(../resource/imgs/cart_null.png) no-repeat;
+}
+
+main div.w div.right {
+  height: 80px;
+  width: 600px;
+  margin-top: 140px;
+  margin-left: 40px;
+}
+
+main div.w div.right p.big {
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+main div.w div.right p.big a {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  background: #f70;
+  margin: 3px;
+}
+
+main div.w div.right p.big a:hover {
+  background: #f60;
+}
+
+main div.w p.small a {
+  color: #2288ee;
+}
+
+main div.w p.small a:hover {
+  color: #f70;
+}
+
+footer {
+  height: 160px;
+  margin-top: 60px;
+}
+
+footer .w {
+  padding-top: 20px;
+}
+
+footer .w ul {
+  height: 25px;
+  text-align: center;
+}
+
+footer .w ul li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+footer .w ul li a {
+  color: #666666;
+}
+
+footer .w ul li a:hover {
+  color: #f70;
+}
+
+footer .w ul li i {
+  display: block;
+  width: 1px;
+  height: 14px;
+  top: 10px;
+  right: -3px;
+  background: #666;
+  position: absolute;
+}
+
+footer .w div.img {
+  width: 100%;
+}
+
+footer .w div.img img {
+  margin-left: 40px;
+}

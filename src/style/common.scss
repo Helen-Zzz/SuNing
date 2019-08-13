@@ -1,0 +1,46 @@
+body,h1,h2,h3,h4,h5,h6,p,div,a,input,img,figure,figcaption,ul,li,ol,dl,dd,dt{padding: 0;margin: 0;}
+body{
+    font-size:12px;
+    font-family:"微软雅黑";
+    color:#333;
+    background: #f2f2f2
+}
+
+ul,ol{
+    list-style:none;
+}
+
+img{
+    display: block;
+    border:0;
+}
+
+input{
+    outline:none;
+    border:0;
+}
+
+a{
+    text-decoration:none;
+    color:#333;  
+}
+
+.w{
+    width:1190px;
+    margin: auto;
+}
+.l{
+    float:left;
+}
+.r{
+    float:right;
+}
+.re{
+    position: relative;
+}
+.ab{
+    position: absolute;
+}
+header,nav,main,section,aside,article,footer{
+    display:block;
+}

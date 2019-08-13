@@ -1,0 +1,383 @@
+body {
+  background: #fff;
+}
+
+.w {
+  width: 970px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+}
+
+header div.w {
+  background: yellow;
+}
+
+header div.w a.logo {
+  display: block;
+  margin: 5px 0;
+  width: 190px;
+  height: 90px;
+  background: url(../resource/imgs/logo.png) no-repeat;
+  background-size: cover;
+}
+
+header div.w div {
+  height: 30px;
+  line-height: 30px;
+  background: #fefff1;
+  border: 1px solid #fecd66;
+  margin-top: 32px;
+  margin-left: 20px;
+}
+
+header div.w div a {
+  color: #f70;
+}
+
+header div.w div a:hover {
+  text-decoration: underline;
+}
+
+header div.w a.adv {
+  display: block;
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  top: 68px;
+  left: 750px;
+  color: #333;
+}
+
+header div.w a.adv span {
+  display: block;
+  top: 0px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+main {
+  height: 570px;
+  background: #fff;
+  background: url(../resource/imgs/login_banner.jpg) no-repeat -520px;
+  background-size: auto 570px;
+}
+
+main div.w div.r {
+  width: 360px;
+  height: 432px;
+  background: #fff;
+  margin-top: 50px;
+}
+
+main div.w div.r div.top {
+  border-bottom: 1px solid #eee;
+  height: 50px;
+}
+
+main div.w div.r div.top a {
+  display: block;
+  float: left;
+  width: 75px;
+  height: 47px;
+  margin: 0 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+
+main div.w div.r div.top a:hover {
+  color: #f70;
+}
+
+main div.w div.r div.top a:nth-of-type(1) {
+  border-bottom: 3px solid #f70;
+}
+
+main div.w div.r div.top i {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 176px;
+  width: 1px;
+  height: 20px;
+  background: #eee;
+  float: left;
+}
+
+main div.w div.r div.middle {
+  width: 310px;
+  height: 220px;
+  margin: 0 24px;
+  padding-top: 1px;
+}
+
+main div.w div.r div.middle div.middle1 {
+  height: 200px;
+  width: 270px;
+  margin: 20px;
+  padding-top: 1px;
+}
+
+main div.w div.r div.middle div.middle1 div.img {
+  margin-top: 20px;
+  height: 140px;
+}
+
+main div.w div.r div.middle div.middle1 div.img img.left {
+  width: 120px;
+  margin: auto;
+  left: 70px;
+  transition: left .5s;
+}
+
+main div.w div.r div.middle div.middle1 div.img img.right {
+  width: 100px;
+  top: -20px;
+  left: 160px;
+  transition: all .5s;
+  opacity: 0;
+}
+
+main div.w div.r div.middle div.middle1 div.img:hover img.left {
+  left: 15px;
+}
+
+main div.w div.r div.middle div.middle1 div.img:hover img.right {
+  opacity: 1;
+}
+
+main div.w div.r div.middle div.middle1 p {
+  height: 30px;
+  width: 280px;
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+}
+
+main div.w div.r div.middle div.middle1 p span {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  font-size: 20px;
+  top: 0px;
+  left: 45px;
+}
+
+main div.w div.r div.middle div.middle1 p a {
+  color: #f70;
+}
+
+main div.w div.r div.middle div.middle1 p a:hover {
+  text-decoration: underline;
+}
+
+main div.w div.r div.middle div.middle2 {
+  display: none;
+  height: 200px;
+  width: 270px;
+  margin: 20px;
+  padding-top: 1px;
+}
+
+main div.w div.r div.middle div.middle2 div.input {
+  height: 40px;
+  width: 250px;
+  margin: 10px auto;
+  border: 1px solid #eee;
+}
+
+main div.w div.r div.middle div.middle2 div.input span {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  background: blue;
+}
+
+main div.w div.r div.middle div.middle2 div.input input {
+  float: left;
+  height: 40px;
+  width: 200px;
+  line-height: 40px;
+  text-indent: 5px;
+  color: #333;
+}
+
+main div.w div.r div.middle div.middle2 div.name span {
+  background: url(../resource/imgs/login_sprint2.png) no-repeat 0px 0px;
+}
+
+main div.w div.r div.middle div.middle2 div.pw span {
+  background: url(../resource/imgs/login_sprint2.png) no-repeat 0px -40px;
+}
+
+main div.w div.r div.middle div.middle2 div.word {
+  height: 50px;
+  width: 250px;
+}
+
+main div.w div.r div.middle div.middle2 div.word p.yan {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+
+main div.w div.r div.middle div.middle2 div.word p.yan span.phone {
+  float: left;
+  display: block;
+  width: 12px;
+  height: 16px;
+  margin: 16px 3px;
+  background: url(../resource/imgs/login_sprint2.png) no-repeat 0px -80px;
+}
+
+main div.w div.r div.middle div.middle2 div.word p.yan a {
+  color: #333;
+}
+
+main div.w div.r div.middle div.middle2 div.word p.yan a:hover {
+  color: #f70;
+}
+
+main div.w div.r div.middle div.middle2 div.word p.wang {
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+}
+
+main div.w div.r div.middle div.middle2 div.word p.wang a {
+  color: #333;
+}
+
+main div.w div.r div.middle div.middle2 div.word p.wang a:hover {
+  color: #f70;
+}
+
+main div.w div.r div.middle div.middle2 input[type=submit] {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  margin: 5px auto;
+  text-align: center;
+  background: #f70;
+  color: #fff;
+  font-size: 22px;
+}
+
+main div.w div.r > a {
+  display: block;
+  text-align: center;
+  margin: 22px auto 40px;
+}
+
+main div.w div.r > a:hover {
+  color: #f70;
+  text-decoration: underline;
+}
+
+main div.w div.r div.down {
+  height: 80px;
+  width: 300px;
+  margin: auto;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+main div.w div.r div.down > span {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 95px;
+  height: 16px;
+  width: 100px;
+  padding: 5px;
+  background: #fff;
+  color: #666;
+}
+
+main div.w div.r div.down ul {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+}
+
+main div.w div.r div.down ul li {
+  height: 50px;
+  width: 75px;
+  line-height: 50px;
+  float: left;
+  position: relative;
+}
+
+main div.w div.r div.down ul li span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 17px;
+  left: -4px;
+}
+
+main div.w div.r div.down ul li a {
+  padding-right: 15px;
+  padding-left: 5px;
+  border-right: 1px solid #eee;
+}
+
+main div.w div.r div.down ul li a:hover {
+  color: #f70;
+  text-decoration: underline;
+}
+
+footer {
+  height: 160px;
+}
+
+footer .w {
+  padding-top: 20px;
+}
+
+footer .w ul {
+  height: 25px;
+  text-align: center;
+}
+
+footer .w ul li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+footer .w ul li a {
+  color: #666666;
+}
+
+footer .w ul li a:hover {
+  color: #f70;
+}
+
+footer .w ul li i {
+  display: block;
+  width: 1px;
+  height: 14px;
+  top: 10px;
+  right: -3px;
+  background: #666;
+  position: absolute;
+}
+
+footer .w div.img {
+  width: 100%;
+}
+
+footer .w div.img img {
+  margin-left: 40px;
+}

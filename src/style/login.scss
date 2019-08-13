@@ -1,0 +1,345 @@
+body{
+    background: #fff;
+}
+.w{
+    width:970px;
+    margin:0 auto;
+}
+// header 
+header{
+    height: 100px;
+    div.w{
+        background: yellow;
+        a.logo{
+            display: block;
+            margin: 5px 0;
+            width: 190px;
+            height: 90px;
+            background: url(../resource/imgs/logo.png) no-repeat;
+            background-size:cover;
+        }
+        div{
+            height: 30px;
+            line-height: 30px;
+            background: #fefff1;
+            border:1px solid #fecd66;
+            margin-top: 32px;
+            margin-left: 20px;
+            a{
+                color:#f70;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        a.adv{
+            display: block;
+            width: 170px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            // background: pink;
+            top:68px;
+            left:750px;
+            color:#333;
+            span{
+                display: block;
+                top:0px;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                font-size: 20px;
+                color:#333;
+            }
+        }
+    }
+}
+
+// main
+main{
+    height: 570px;
+    background: #fff;
+    background: url(../resource/imgs/login_banner.jpg) no-repeat -520px ;
+    background-size: auto 570px;
+    div.w{
+        div.r{
+            width: 360px;
+            height: 432px;
+            background: #fff;
+            margin-top: 50px;
+            div.top{
+                border-bottom: 1px solid #eee;
+                height: 50px;
+                a{
+                    display: block;
+                    float: left;
+                    width: 75px;
+                    height: 47px;
+                    margin: 0 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 16px;
+                    &:hover{
+                        color: #f70;
+                    }
+                    &:nth-of-type(1){
+                        border-bottom: 3px solid #f70;
+                    }
+                }
+                i{
+                    display: block;
+                    position: absolute;
+                    top:15px;
+                    left: 176px;
+                    width: 1px;
+                    height: 20px;
+                    background: #eee;
+                    float: left;
+                    // margin-top: 15px;
+                }
+            }
+            div.middle{
+                width: 310px;
+                height: 220px;
+                // background: yellow;
+                margin: 0 24px;
+                // clear: both;
+                padding-top: 1px;
+                div.middle1{
+                    // display: none;
+                    height: 200px;
+                    width: 270px;
+                    margin:20px;
+                    padding-top: 1px;
+                    div.img{
+                        margin-top: 20px;
+                        height: 140px;
+                        img.left{
+                            width: 120px;
+                            margin: auto;
+                            left:70px;
+                            transition: left .5s;
+                        }
+                        img.right{
+                            width:100px;
+                            top:-20px;
+                            left:160px;
+                            transition: all .5s;
+                            opacity: 0;
+                        }
+                        &:hover{
+                            img.left{
+                                left: 15px;
+                            }
+                            img.right{
+                                opacity:1;
+                            }
+                        }
+                    }
+                    p{
+                        height: 30px;
+                        width: 280px;
+                        margin-top: 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        position: relative;
+                        span{
+                            display: inline-block;
+                            width: 20px;
+                            height: 30px;
+                            font-size: 20px;
+                            top:0px;
+                            left:45px;
+                        }
+                        a{
+                            color: #f70;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                }
+                div.middle2{
+                    display: none;
+                    height: 200px;
+                    width: 270px;
+                    margin:20px;
+                    padding-top: 1px;
+                    div.input{
+                        height: 40px;
+                        width: 250px;
+                        margin:10px auto;
+                        border: 1px solid #eee;
+                        span{
+                            float: left;
+                            width: 20px;
+                            height: 20px;
+                            margin: 10px;
+                            background: blue;
+                        }
+                        input{
+                            float: left;
+                            height: 40px;
+                            width: 200px;
+                            line-height: 40px;
+                            text-indent: 5px;
+                            color:#333;
+                        }
+                    }
+                    div.name{
+                        span{
+                            background: url(../resource/imgs/login_sprint2.png) no-repeat 0px 0px;
+                        }
+                    }
+                    div.pw{
+                        span{
+                            background: url(../resource/imgs/login_sprint2.png) no-repeat 0px -40px;
+                        }
+                    }
+                    div.word{
+                        height: 50px;
+                        width:250px;
+                        // background: green;
+                        p.yan{
+                            width: 150px;
+                            height: 50px;
+                            line-height: 50px;
+                            span.phone{
+                                float: left;
+                                display: block;
+                                width:12px;
+                                height: 16px;
+                                margin: 16px 3px;
+                                background:url(../resource/imgs/login_sprint2.png) no-repeat 0px -80px;
+                            }
+                            a{
+                                color: #333;
+                                &:hover{
+                                    color:#f70;
+                                }
+                            }
+                        }
+                        p.wang{
+                            width: 70px;
+                            height: 50px;
+                            line-height: 50px;
+                            a{
+                                color: #333;
+                                &:hover{
+                                    color: #f70;
+                                }
+                            }
+                        }
+                    }
+                    input[type=submit]{
+                        width: 250px;
+                        height: 40px;
+                        line-height: 40px;
+                        margin: 5px auto;
+                        text-align: center;
+                        background: #f70;
+                        color: #fff;
+                        font-size: 22px;
+                    }
+
+                }
+            }
+            &>a{
+                display: block;
+                text-align: center;
+                margin: 22px auto 40px;
+                &:hover{
+                    color: #f70;
+                    text-decoration: underline;
+                }
+            }
+            div.down{
+                height: 80px;
+                width: 300px;
+                margin: auto;
+                // background: rgb(215, 223, 215);
+                border-top: 1px solid #eee;
+                text-align: center;
+                &>span{
+                    position: absolute;
+                    display: inline-block;
+                    top:-13px;
+                    left: 95px;
+                    height: 16px;
+                    width: 100px;
+                    padding: 5px;
+                    background: #fff;
+                    color: #666;
+                }
+                ul{
+                    height: 50px;
+                    line-height: 50px;
+                    margin-top: 20px;
+                    li{
+                        height: 50px;
+                        width: 75px;
+                        line-height: 50px;;
+                        float: left;
+                        position: relative;
+                        span{
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            position: absolute;
+                            top:17px;
+                            left: -4px;;
+                        }
+                        a{
+                            padding-right: 15px;
+                            padding-left: 5px;
+                            border-right: 1px solid #eee;
+                            &:hover{
+                                color:#f70;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer
+footer{
+    height: 160px;
+    .w{
+        padding-top: 20px;
+        ul{
+            height: 25px;
+            text-align: center;
+            li{
+                display: inline-block;
+                padding: 10px;
+                position: relative;
+                a{
+                    color: #666666;
+                    &:hover{
+                        color: #f70;
+                    }
+                }
+                i{
+                    display: block;
+                    width: 1px;
+                    height: 14px;
+                    top: 10px;
+                    right: -3px;
+                    background: #666;
+                    position: absolute;
+                }
+            }
+        }
+        div.img{
+            width: 100%;
+            img{
+                margin-left: 40px;
+            }
+        }
+    }
+}

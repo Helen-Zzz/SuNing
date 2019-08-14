@@ -81,15 +81,6 @@ $('div.imgBan ul.dotes li').mouseover(function () {
 var banner_down_one = $('div.banner div.down ul.one li')
 var banner_down_two = $('div.banner div.down ul.two>li')
 var banner_down_two_word = $('div.banner div.down ul.two>li div.word')
-// banner_down_one.on('mouseenter', function () {
-//     var index = $(this).index()
-//     $(this).parent().css('opacity', '0')
-//     banner_down_two.parent().css('opacity', '1')
-//     banner_down_two.removeClass('current')
-//     banner_down_two.css('z-index', '6')
-//     banner_down_two.eq(index).addClass('current')
-//     // banner_down_two.eq(index).css('width','655px')
-// })
 banner_down_one.on('mouseenter', function () {
     var index = $(this).index()
     $(this).parent().css('display', 'none')
@@ -113,9 +104,9 @@ banner_down_two.parent().on('mouseleave', function (evt) {
 })
 
 //监听transition结束的事件
-banner_down_two.on('transitionend', function() {
-    console.log('=====================动画时间结束.width=',$(this).width())
-    if($(this).width() === 53) {
+banner_down_two.on('transitionend', function () {
+    console.log('=====================动画时间结束.width=', $(this).width())
+    if ($(this).width() === 53) {
         $(this).find('.word').show()
     }
 })
@@ -159,7 +150,8 @@ autoBanner()
 
 // 回到顶部
 function aside2Top() {
-    var aside2top = $('div.aside aside.right div.bottom a.toTop')
+    var aside2top = $('div.aside aside.right div.bottom a.toTop,div.aside aside.left ul li.asidetoTop')
+    // var asideLeft2top = $()
     // console.log(aside2top)
     var toTopInter;
     aside2top.click(function () {
@@ -195,4 +187,81 @@ function asideShowBottom() {
 }
 asideShowBottom()
 
-// 
+// 吸顶
+function xiding() {
+    var asideTop = $('div.aside aside.top')//不定位static
+    var asideCart = $('nav.top ul.r li.cart')//re 没坐标
+    var asideCartSec = asideCart.find('div,rTre')
+    var asideInput = $('header div.w div.ab div.search')//re 没坐标
+    var asideNav = $('nav.main div.w div.nav')//ab 没坐标 可以是l0 t0
+    var asideLogin = $('nav.top ul.r li.login')//wu
+    var asideRegister = $('nav.top ul.r li.register')//wu
+    console.log(asideCart)
+    var showTop
+    window.onscroll = function(){
+        var nowTop = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+        if (nowTop > 800) {
+            asideTop.css('top', '0')
+            // console.log('成功')
+            asideCart.css({     // 改定位cart
+                position: 'fixed',
+                right: '100px',
+                top: '5px',
+                width: '60px'
+            })
+            asideCartSec.css('left', '-272px')
+            asideInput.css({        //改定位input
+                position:'fixed',
+                left:'400px',
+                top:'-25px',
+                zIndex:8
+            })
+            asideNav.css({      //改坐标 nav
+                position:'fixed',
+                top:'5px',
+                left:'120px'
+            })
+            asideNav.find('ul.sec').css({
+                display:'none'
+            })
+            asideNav.hover(function(){
+                asideNav.find('ul.sec').css({
+                    display:'block',
+                })
+            },function(){
+                asideNav.find('ul.sec').css({
+                    display:'none'
+                })
+            })
+
+        } else {
+            asideTop.css('top', '-100px')    // 改定位cart
+            asideCart.css({
+                position: 'relative',
+                top: '0px',
+                right: '0',
+                width: '60px'
+            })
+            asideCartSec.css({
+                top: '35px',
+                left: ''
+            })
+            asideInput.css({        //改定位input
+                position:'relative',
+                top:'',
+                left:'',
+                zIndex:1
+            })
+            asideNav.css({      //改定位nav
+                position:'absolute',
+                top:'',
+                left:''
+            })
+            asideNav.find('ul.sec').css({
+                display:'block'
+            })
+        }
+
+    }
+}
+xiding()

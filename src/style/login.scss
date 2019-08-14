@@ -166,6 +166,16 @@ main{
                     width: 270px;
                     margin:20px;
                     padding-top: 1px;
+                    p.error{
+                        width: 250px;
+                        height: 20px;
+                        line-height: 20px;
+                        border: 1px solid red;
+                        background:#fff0f0;
+                        margin-left: 9px;
+                        text-indent: 10px;
+                        display: none;
+                    }
                     div.input{
                         height: 40px;
                         width: 250px;
@@ -248,7 +258,7 @@ main{
             &>a{
                 display: block;
                 text-align: center;
-                margin: 22px auto 40px;
+                margin: 35px auto 40px;
                 &:hover{
                     color: #f70;
                     text-decoration: underline;

@@ -187,6 +187,17 @@ main div.w div.r div.middle div.middle2 {
   padding-top: 1px;
 }
 
+main div.w div.r div.middle div.middle2 p.error {
+  width: 250px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid red;
+  background: #fff0f0;
+  margin-left: 9px;
+  text-indent: 10px;
+  display: none;
+}
+
 main div.w div.r div.middle div.middle2 div.input {
   height: 40px;
   width: 250px;
@@ -275,7 +286,7 @@ main div.w div.r div.middle div.middle2 input[type=submit] {
 main div.w div.r > a {
   display: block;
   text-align: center;
-  margin: 22px auto 40px;
+  margin: 35px auto 40px;
 }
 
 main div.w div.r > a:hover {

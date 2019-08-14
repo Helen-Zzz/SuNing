@@ -17,6 +17,11 @@ function copyLib(){
 helen.task('copyLib',copyLib)
 // 拷贝合并
 var copyAll = helen.parallel(copyIndex,copyHtml,copyImgs)
+// 拷贝php
+function copyPhp(){
+    return helen.src('./src/php/**/*.php').pipe(helen.dest('./dist/php/'))
+}
+
 
 // 编译sass
 var sass = require('gulp-sass')
@@ -70,5 +75,6 @@ function watch(){
     helen.watch('./src/script/goods/**/*.js',goodsjs)
     helen.watch('./src/resource/icons/**/*.png',sprite)
     helen.watch('./src/lib/**',copyLib)
+    helen.watch('./src/php/**/*.php',copyPhp)
 }
 helen.task('watch',watch)

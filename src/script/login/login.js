@@ -22,20 +22,28 @@ $loginSubmit.click(function(){
         $errorP.html('请输入正确用户名及密码').css('display','block');
     } else {
         // 发送Ajax请求 判断用户名密码是否匹配 跳转还是报错
-        var xhr = new XMLHttpRequest()
-        xhr.open('post','../php/login.php',true)
-        xhr.onload = function(){
-            if(this.status<200 || this.status>=300)return;
-            if(this.responseText){
-                $errorP.css('display','none')
-                location.href('../index.html')
+        $.ajax(
+            {
+                method:'post',
+                url:'../../php/login.php',
+                data:{
+                    phone:$inputName.val(),
+                    pw:$inputPw.val()
+                },
+                success:function(resp){
+                    if(resp.result){
+                        $errorP.css('display','none')
+                        location.href='../../index.html'
+                    } else{
+                        $errorP.html('用户名密码不匹配').css('display','block');
+                    }
+                    console.log('发送成功')
+                },
+                error:function(resp){
+                    console.log('ajax发送失败')
+                    console.log(resp)
+                }
             }
-            xhr.setRequestHeader('content-type','application/x-www-form-urlencoded')
-            xhr.send('name='+$inputName.val()+'&pw='+$inputPw.val())
-        }
-        // $errorP.css('display','none')
-        // location.href = '../../index.html'
-
+        )
     }
-    // console.log('meizou')
 })

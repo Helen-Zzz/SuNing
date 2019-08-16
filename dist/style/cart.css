@@ -27,7 +27,7 @@ nav.top .w ul {
 nav.top .w ul li {
   color: #666;
   border: 1px solid transparent;
-  padding-left: 5px;
+  padding-left: 1px;
   padding-right: 20px;
   cursor: pointer;
 }
@@ -45,7 +45,6 @@ nav.top .w ul li.shou span {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  font-size: 18px;
 }
 
 nav.top .w ul .write {
@@ -54,7 +53,7 @@ nav.top .w ul .write {
 
 nav.top .w ul .write .icon-right {
   position: absolute;
-  width: 12px;
+  width: 110x;
   height: 12px;
   line-height: 12px;
   top: 11px;
@@ -352,14 +351,15 @@ header div.w .search input[type="submit"]:hover {
 
 main {
   margin-top: 5px;
-  height: 266px;
+  min-height: 300px;
 }
 
-main div.w {
+main div.null {
   height: 266px;
+  display: none;
 }
 
-main div.w div.left {
+main div.null div.left {
   margin-top: 80px;
   margin-left: 50px;
   width: 250px;
@@ -367,20 +367,20 @@ main div.w div.left {
   background: url(../resource/imgs/cart_null.png) no-repeat;
 }
 
-main div.w div.right {
+main div.null div.right {
   height: 80px;
   width: 600px;
   margin-top: 140px;
   margin-left: 40px;
 }
 
-main div.w div.right p.big {
+main div.null div.right p.big {
   height: 50px;
   line-height: 50px;
   font-size: 20px;
 }
 
-main div.w div.right p.big a {
+main div.null div.right p.big a {
   display: inline-block;
   width: 80px;
   height: 35px;
@@ -391,16 +391,150 @@ main div.w div.right p.big a {
   margin: 3px;
 }
 
-main div.w div.right p.big a:hover {
+main div.null div.right p.big a:hover {
   background: #f60;
 }
 
-main div.w p.small a {
+main div.null p.small a {
   color: #2288ee;
 }
 
-main div.w p.small a:hover {
+main div.null p.small a:hover {
   color: #f70;
+}
+
+main div.goods {
+  min-height: 300px;
+  background: #fff;
+}
+
+main div.goods div.title {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-top-width: 3px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+main div.goods div.title p {
+  color: #333;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+main div.goods div.title p input {
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+main div.goods div.title p.p1 {
+  width: 80px;
+  text-align: left;
+}
+
+main div.goods div.title p.p2 {
+  width: 300px;
+}
+
+main div.goods div.title p.p3 {
+  width: 150px;
+}
+
+main div.goods div.title p.p4 {
+  width: 110px;
+}
+
+main div.goods div.title p.p5 {
+  width: 110px;
+}
+
+main div.goods div.title p.p6 {
+  width: 110px;
+}
+
+main div.goods div.title p.p7 {
+  width: 110px;
+}
+
+main div.goods ul.goods {
+  background: #fffbf2;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+main div.goods ul.goods li {
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 10px 10px;
+}
+
+main div.goods ul.goods li div.check {
+  width: 50px;
+  margin-right: 20px;
+}
+
+main div.goods ul.goods li div.check input {
+  margin-top: 10px;
+}
+
+main div.goods ul.goods li dl {
+  width: 330px;
+}
+
+main div.goods ul.goods li dl dt img {
+  margin: 10px;
+}
+
+main div.goods ul.goods li dl dd h6 {
+  width: 180px;
+  margin: 0px 30px;
+}
+
+main div.goods ul.goods li div.spec {
+  width: 110px;
+}
+
+main div.goods ul.goods li div.price {
+  width: 110px;
+}
+
+main div.goods ul.goods li div.count {
+  width: 130px;
+}
+
+main div.goods ul.goods li div.count span.num {
+  display: inline-block;
+  width: 80px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+main div.goods ul.goods li div.count span.num span.en {
+  width: 25px;
+  cursor: pointer;
+}
+
+main div.goods ul.goods li div.count span.num i {
+  font-style: normal;
+}
+
+main div.goods ul.goods li div.pay {
+  width: 90px;
+  font-weight: bold;
+}
+
+main div.goods ul.goods li div.dele {
+  width: 130px;
+}
+
+main div.goods ul.goods li div.dele:hover {
+  color: #f60;
 }
 
 footer {

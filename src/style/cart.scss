@@ -21,7 +21,7 @@ nav.top {
             li {
                 color: #666;
                 border: 1px solid transparent;
-                padding-left: 5px;
+                padding-left: 1px;
                 padding-right: 20px;
                 cursor: pointer;
                 &:hover {
@@ -37,14 +37,13 @@ nav.top {
                     width: 30px;
                     height: 30px;
                     line-height: 30px;
-                    font-size: 18px;
                 }
             }
             .write {
                 position: relative;
                 .icon-right {
                     position: absolute;
-                    width: 12px;
+                    width: 110x;
                     height: 12px;
                     line-height: 12px;
                     top: 11px;
@@ -330,9 +329,10 @@ header{
 // main
 main{
     margin-top: 5px;
-    height: 266px;
-    div.w{
+    min-height: 300px;
+    div.null{
         height: 266px;
+        display: none;
         // padding-top: 1px;
         // padding-top: 50px;
         div.left{
@@ -376,6 +376,152 @@ main{
             }
         }
     
+    }
+    div.goods{
+        min-height: 300px;
+        background: #fff;
+        // display: none;
+        div.title{
+            height: 40px;
+            line-height: 40px;
+            border:1px solid #ccc;
+            border-top-width: 3px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            p{
+                color: #333;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                input{
+                    margin-left: 8px;
+                    margin-right: 5px;
+                }
+            }
+            p.p1{
+                width: 80px;
+                text-align: left;
+            }
+            p.p2{
+                width: 300px;
+
+            }
+            p.p3{
+                width: 150px;
+            }
+            p.p4{
+                width: 110px;
+            }
+            p.p5{
+                width: 110px;
+            }
+            p.p6{
+                width: 110px;
+            }
+            p.p7{
+                width: 110px;
+            }
+        }
+        ul.goods{
+            background: #fffbf2;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            li{
+                display: flex;
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+                padding: 20px 10px 10px;
+                div.check{
+                    width: 50px;
+                    margin-right: 20px;
+                    input{
+                        margin-top: 10px;
+                    }
+                }
+                dl{
+                    width: 330px;
+                    dt{
+                        img{
+                            margin: 10px;
+                        }
+                    }
+                    dd{
+                        h6{
+                            width: 180px;
+                            margin:0px 30px;
+                        }
+                    }
+                }
+                div.spec{
+                    width: 110px;
+                    // p.spec{
+                    // }
+                }
+                div.price{
+                    width: 110px;
+                    // span{
+                    // }
+                }
+                div.count{
+                    width: 130px;
+                    span.num{
+                        display: inline-block;
+                        width: 80px;
+                        height: 16px;
+                        line-height: 16px;
+                        text-align: center;
+                        border: 1px solid #ccc;
+                        span.en{
+                            width: 25px;
+                            cursor: pointer;
+                        }
+                        i{
+                            font-style: normal;
+                        }
+                    }
+                }
+                div.pay{
+                    width: 90px;
+                    font-weight: bold;
+                }
+                div.dele{
+                    width: 130px;
+                    &:hover{
+                        color:#f60;
+                    }
+                }
+            }
+        }
+        // div.end{
+        //     height: 50px;
+        //     line-height: 40px;
+        //     border:1px solid #ccc;
+        //     border-top-width: 3px;
+        //     border-radius: 5px;
+        //     margin: 30px 0;
+            // p{
+            //     span.sum{
+            //         font-size: 26px;
+            //         font-weight: bold;
+            //     }
+                // span.jie{
+                //     display: inline-block;
+                //     width: 80px;
+                //     height: 38px;
+                //     line-height: 38px;
+                //     margin-left: 10px;
+                //     border-radius: 5px;;
+                //     text-align: center;
+                //     background: #f70;
+                //     color:#fff;
+                //     cursor: pointer;
+                //     &:hover{
+                //         background: #f60;
+                //     }
+                // }
+            // }
+        // }
     }
 }
 

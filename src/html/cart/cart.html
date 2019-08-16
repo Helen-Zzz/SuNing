@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../..//lib/icon_font/iconfont.css">
+    <link rel="stylesheet" href="../../lib/icon_font/iconfont.css">
     <link rel="stylesheet" href="../../style/common.css">
     <link rel="stylesheet" href="../../style/cart.css">
     <link rel="stylesheet" href="../../resource/icons/sprite.css">
@@ -112,7 +112,8 @@
                 </li>
             </ul>
             <ul class="r">
-                <li class="l"><a href="../../html/login/login.html">请登录</a></li>
+                    <li class="l leave"><a href="javascript:;" class="leave">退出登录</a></li>
+                <li class="l"><a href="../../html/login/login.html" class="wel">请登录</a></li>
                 <li class="l"><a href="../../html/register/register.html" style="color:#f70">注册有礼</a></li>
                 <li class="l write re"><a href="javascript:;">我的订单</a><span class="iconfont icon-right"></span>
                     <div class="sec ab rOne">
@@ -176,47 +177,122 @@
         </div>
     </header>
     <main>
-        <div class="w">
+        <div class="w null">
             <div class="left l"></div>
             <div class="right l">
                 <p class="big">购物车还是空空的呢<a href="../login/login.html">登录</a>查看您之前加入的商品</p>
                 <p class="small">您可以<a href="../../index.html"> 去逛逛>></a></p>
             </div>
         </div>
+        <div class="w goods">
+            <div class="title">
+                <p class="p1">
+                    <label><input type='checkbox'>全选</label>
+                </p>
+                <p class="p2">商品信息</p>
+                <p class="p3">规格</p>
+                <p class="p4">单价（元）</p>
+                <p class="p5">数量</p>
+                <p class="p6">小计（元）</p>
+                <p class="p7">操作</p>
+            </div>
+            <ul class="goods">
+                <li>
+                    <div class="check"><input type="checkbox"></div>
+                    <dl class="l">
+                        <dt class="l"><img src="../../resource/imgs/banner_62_1.jpg" alt=""></dt>
+                        <dd class="r">
+                            <h6>青春电子版电子书阅读器大内存激光电视投影家用</h6>
+                        </dd>
+                    </dl>
+                    <div class="spec">
+                        <p class="spec">颜色：黑色</p>
+                    </div>
+                    <div class="price">￥<span>658</span></div>
+                    <div class="count">
+                        <span class="num"><span class="min en l">-</span><i>5</i> <span class="add en r">+</span></span>
+                    </div>
+                    <div class="pay">￥555</div>
+                    <div class="dele">删除</div>
+                </li>
+                <li>
+                    <div class="check"><input type="checkbox"></div>
+                    <dl>
+                        <dt class="l"><img src="../../resource/imgs/banner_62_1.jpg" alt=""></dt>
+                        <dd class="r">
+                            <h6>青春电子版电子书阅读器大内存激光电视投影家用</h6>
+                        </dd>
+                    </dl>
+                    <div class="spec">
+                        <p class="spec">颜色：黑色</p>
+                    </div>
+                    <div class="price">￥<span>658</span></div>
+                    <div class="count">
+                            <span class="num"><span class="min en l">-</span><i>5</i><span class="add en r">+</span></span>
+                        </div>
+                    <div class="pay">￥555</div>
+                    <div class="dele">删除</div>
+                </li>
+                <li>
+                    <div class="check"><input type="checkbox"></div>
+                    <dl>
+                        <dt class="l"><img src="../../resource/imgs/banner_62_1.jpg" alt=""></dt>
+                        <dd class="r">
+                            <h6>青春电子版电子书阅读器大内存激光电视投影家用</h6>
+                        </dd>
+                    </dl>
+                    <div class="spec">
+                        <p class="spec">颜色：黑色</p>
+                    </div>
+                    <div class="price">￥<span>658</span></div>
+                    <div class="count">
+                            <span class="num"><span class="min en l">-</span><i>5</i><span class="add en r">+</span></span>
+                        </div>
+                    <div class="pay">￥555</div>
+                    <div class="dele">删除</div>
+                </li>
+            </ul>
+
+            <!-- <div class="end">
+                <p class="r">
+                    总计：<span class="sum">5555</span>元<span class="jie">去结算</span>
+                </p>
+            </div> -->
+        </div>
     </main>
     <footer>
-            <div class="w">
-                <ul>
-                    <li><a href="javascript:;">苏宁互联</a><i></i></li>
-                    <li><a href="javascript:;">苏宁金融</a><i></i></li>
-                    <li><a href="javascript:;">苏宁支付</a><i></i></li>
-                    <li><a href="javascript:;">PP视频</a><i></i></li>
-                    <li><a href="javascript:;">红孩子</a><i></i></li>
-                    <li><a href="javascript:;">苏宁物流</a><i></i></li>
-                    <li><a href="javascript:;">手机苏宁</a><i></i></li>
-                    <li><a href="javascript:;">零售云</a><i></i></li>
-                    <li><a href="javascript:;">苏宁云</a><i></i></li>
-                    <li><a href="javascript:;">知识产权举报</a><i></i></li>
-                    <li><a href="javascript:;">投资者关系</a></li>
-                </ul>
-                <ul>
-                    <li><a href="javascript:;">联系我们</a><i></i></li>
-                    <li><a href="javascript:;">诚聘英才</a><i></i></li>
-                    <li><a href="javascript:;">供应商入驻</a><i></i></li>
-                    <li><a href="javascript:;">广告平台</a><i></i></li>
-                    <li><a href="javascript:;">苏宁联盟</a><i></i></li>
-                    <li><a href="javascript:;">苏宁招标</a><i></i></li>
-                    <li><a href="javascript:;">友情链接</a><i></i></li>
-                    <li><a href="javascript:;">隐私声明</a><i></i></li>
-                    <li><a href="javascript:;">用户体验提升计划</a><i></i></li>
-                    <li><a href="javascript:;">股东会员认证</a></li>
-                </ul>
-                <div class="img">
-                    <img src="../../resource/imgs/login_footer.png" alt="">
-                </div>
+        <div class="w">
+            <ul>
+                <li><a href="javascript:;">苏宁互联</a><i></i></li>
+                <li><a href="javascript:;">苏宁金融</a><i></i></li>
+                <li><a href="javascript:;">苏宁支付</a><i></i></li>
+                <li><a href="javascript:;">PP视频</a><i></i></li>
+                <li><a href="javascript:;">红孩子</a><i></i></li>
+                <li><a href="javascript:;">苏宁物流</a><i></i></li>
+                <li><a href="javascript:;">手机苏宁</a><i></i></li>
+                <li><a href="javascript:;">零售云</a><i></i></li>
+                <li><a href="javascript:;">苏宁云</a><i></i></li>
+                <li><a href="javascript:;">知识产权举报</a><i></i></li>
+                <li><a href="javascript:;">投资者关系</a></li>
+            </ul>
+            <ul>
+                <li><a href="javascript:;">联系我们</a><i></i></li>
+                <li><a href="javascript:;">诚聘英才</a><i></i></li>
+                <li><a href="javascript:;">供应商入驻</a><i></i></li>
+                <li><a href="javascript:;">广告平台</a><i></i></li>
+                <li><a href="javascript:;">苏宁联盟</a><i></i></li>
+                <li><a href="javascript:;">苏宁招标</a><i></i></li>
+                <li><a href="javascript:;">友情链接</a><i></i></li>
+                <li><a href="javascript:;">隐私声明</a><i></i></li>
+                <li><a href="javascript:;">用户体验提升计划</a><i></i></li>
+                <li><a href="javascript:;">股东会员认证</a></li>
+            </ul>
+            <div class="img">
+                <img src="../../resource/imgs/login_footer.png" alt="">
             </div>
-        </footer>
-        
+        </div>
+    </footer>
+
 
 
 

@@ -283,10 +283,10 @@ div.aside div.w aside.left div.w ul {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 5px;
   margin: auto;
   border: 1px solid #ccc;
   background: #f8f8f8;
+  transition: left .3s;
 }
 
 div.aside div.w aside.left div.w ul li {
@@ -298,12 +298,14 @@ div.aside div.w aside.left div.w ul li {
   background: #f8f8f8;
 }
 
-div.aside div.w aside.left div.w ul li:hover {
+div.aside div.w aside.left div.w ul li.current {
   background: #f70;
+  color: #333;
 }
 
-div.aside div.w aside.left div.w ul li:hover a {
-  color: #fff;
+div.aside div.w aside.left div.w ul li:hover {
+  background: #f70;
+  color: #333;
 }
 
 div.aside div.w aside.left div.w ul li a {
@@ -1402,6 +1404,7 @@ div.banner .w div.hello ul.down li a:hover {
 
 div.ran {
   height: 596px;
+  margin-bottom: 50px;
 }
 
 div.ran .w img {
@@ -1460,7 +1463,7 @@ div.ran .w ul li a div.down p {
 
 div.middlem {
   height: 565px;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 div.middlem .w div.all {

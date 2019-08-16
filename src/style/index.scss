@@ -252,17 +252,16 @@ div.aside {
             // display: none;
             div.w{
                 ul{
-                    // background: #2b64df;
+                    // left:-100px;
                     width: 70px;
                     height: 300px;
                     position:fixed;
                     top:0;
                     bottom:0;
-                    left:5px;
                     margin:auto;
-                    // padding-top: 10px;
                     border: 1px solid #ccc;
                     background: #f8f8f8;
+                    transition: left .3s;
                     li{
                         width: 70px;
                         height: 29px;
@@ -270,12 +269,15 @@ div.aside {
                         line-height: 29px;
                         text-align: center;
                         background: #f8f8f8;
+                        &.current{
+                            background: #f70;
+                            color: #333;
+                        }
                         &:hover{
                             background: #f70;
-                            a{
-                                color:#fff;
-                            }
+                            color: #333;
                         }
+
                         a{
                             display: block;
                         }
@@ -1279,6 +1281,7 @@ div.banner {
 div.ran {
     height: 596px;
     // background: rebeccapurple;
+    margin-bottom: 50px;
     .w {
         img {
             height: 150px;
@@ -1334,7 +1337,7 @@ div.ran {
 // middle
 div.middlem {
     height: 565px;
-    margin-top: 50px;
+    margin-bottom: 50px;
     .w {
         div.all {
             width: 590px;

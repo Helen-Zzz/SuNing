@@ -120,14 +120,14 @@ main .w div.all {
   margin: auto;
 }
 
-main .w div.all p {
+main .w div.all p.ling {
   margin-top: 40px;
   height: 60px;
   line-height: 50px;
   font-size: 16px;
 }
 
-main .w div.all p span {
+main .w div.all p.ling span {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -135,7 +135,7 @@ main .w div.all p span {
   font-size: 20px;
 }
 
-main .w div.all p i {
+main .w div.all p.ling i {
   color: red;
   font-style: normal;
 }
@@ -174,10 +174,22 @@ main .w div.all div.input div.r:hover {
   color: #f70;
 }
 
+main .w div.all p.error {
+  min-width: 270px;
+  height: 30px;
+  margin-top: 0;
+  line-height: 30px;
+  border: 1px solid red;
+  background: #fff0f0;
+  text-indent: 10px;
+  background: pink;
+  display: none;
+}
+
 main .w div.all div.submit {
   width: 380px;
   height: 38px;
-  margin-top: 80px;
+  margin-top: 30px;
   line-height: 38px;
   text-align: center;
   color: #fff;

@@ -24,57 +24,57 @@
             // console.log(liLoca.children('div.loca'))
         })
     })
-})()
+})();
 
 // imgs轮播图
-// (function(){
-var currentIndex = 0;
-var bannerColor = ['#ff3a4b', '#b31828', '#ff6877', '#4318e4', '#4b83fc', '#7b49e0', '#5906ca', '#7d00ff']
-auto()
-function slide(index) {
-    if (index > 7) { index = 0; currentIndex = 0 }
-    if (index < 0) { index = 7; currentIndex = 7 }
-    $('div.imgBan ul.imgs li.current').removeClass('current')
-    $('div.imgBan ul.imgs li').eq(index).addClass('current')
-    $('div.imgBan ul.dotes li.focus').removeClass('focus')
-    $('div.imgBan ul.dotes li').eq(index).addClass('focus')
-    $('div.banner').css('background', bannerColor[currentIndex])
-}
-var id;
-function auto() {
-    id = setInterval(function () {
-        toNext()
-    }, 3000)
-}
-function stop() {
-    clearInterval(id)
-}
-function toNext() {
-    currentIndex++;
-    slide(currentIndex)
-}
-function toPrev() {
-    currentIndex--;
-    slide(currentIndex)
-}
-$('div.imgBan span.left').click(function () {
-    toPrev()
-})
-$('div.imgBan span.right').click(function () {
-    toNext()
-})
-$('div.imgBan ul.imgs').mouseover(function () {
-    stop()
-})
-$('div.imgBan ul.imgs').mouseout(function () {
+(function () {
+    var currentIndex = 0;
+    var bannerColor = ['#ff3a4b', '#b31828', '#ff6877', '#4318e4', '#4b83fc', '#7b49e0', '#5906ca', '#7d00ff']
     auto()
-})
-$('div.imgBan ul.dotes li').mouseover(function () {
-    currentIndex = $(this).index();
-    stop()
-    slide(currentIndex)
-}).mouseout(function () { auto() })
-// })()
+    function slide(index) {
+        if (index > 7) { index = 0; currentIndex = 0 }
+        if (index < 0) { index = 7; currentIndex = 7 }
+        $('div.imgBan ul.imgs li.current').removeClass('current')
+        $('div.imgBan ul.imgs li').eq(index).addClass('current')
+        $('div.imgBan ul.dotes li.focus').removeClass('focus')
+        $('div.imgBan ul.dotes li').eq(index).addClass('focus')
+        $('div.banner').css('background', bannerColor[currentIndex])
+    }
+    var id;
+    function auto() {
+        id = setInterval(function () {
+            toNext()
+        }, 3000)
+    }
+    function stop() {
+        clearInterval(id)
+    }
+    function toNext() {
+        currentIndex++;
+        slide(currentIndex)
+    }
+    function toPrev() {
+        currentIndex--;
+        slide(currentIndex)
+    }
+    $('div.imgBan span.left').click(function () {
+        toPrev()
+    })
+    $('div.imgBan span.right').click(function () {
+        toNext()
+    })
+    $('div.imgBan ul.imgs').mouseover(function () {
+        stop()
+    })
+    $('div.imgBan ul.imgs').mouseout(function () {
+        auto()
+    })
+    $('div.imgBan ul.dotes li').mouseover(function () {
+        currentIndex = $(this).index();
+        stop()
+        slide(currentIndex)
+    }).mouseout(function () { auto() })
+})();
 
 
 // banner手风琴效果TODO:
@@ -87,7 +87,7 @@ banner_down_one.on('mouseenter', function () {
     banner_down_two.parent().css('display', 'block')
     banner_down_two.removeClass('current')
     banner_down_two.eq(index).addClass('current')
-})
+});
 
 banner_down_two.on('mouseenter', function (evt) {
     evt.stopPropagation()
@@ -101,20 +101,28 @@ banner_down_two.parent().on('mouseleave', function (evt) {
     evt.stopPropagation()
     $(this).css('display', 'none')
     banner_down_one.parent().css('display', 'block')
-})
+});
 
 //监听transition结束的事件
 banner_down_two.on('transitionend', function () {
-    console.log('=====================动画时间结束.width=', $(this).width())
+    // console.log('=====================动画时间结束.width=', $(this).width())
     if ($(this).width() === 53) {
         $(this).find('.word').show()
     }
-})
+});
+
+
+
+
+
+
+
+
 
 // banner 文字轮播
 var banner_word_ul = $('div.banner div.hello div.middle ul.middle')
 var idBt1, idBt2;
-var top_time = 0
+var top_time = 0;
 
 function banner_top(time) {
     // console.log('cishi' + time)
@@ -135,18 +143,18 @@ function banner_top(time) {
     top_time++
     // console.log('====' + top_time)
     // console.log('==top' + banner_word_ul.css('top'))
-}
+};
 function autoBanner() {
     idBt1 = setInterval(function () {
         banner_top(top_time)
     }, 2000)
-}
+};
 banner_word_ul.mouseenter(function () {
     clearInterval(idBt1)
 }).mouseleave(function () {
     autoBanner()
-})
-autoBanner()
+});
+autoBanner();
 
 // 回到顶部
 function aside2Top() {
@@ -164,11 +172,11 @@ function aside2Top() {
             }
         }, 16)
     })
-    window.onmousewheel = function () {
+    $(window).on('mousewheel', function () {
         clearInterval(toTopInter)
-    }
-}
-aside2Top()
+    })
+};
+aside2Top();
 
 // 底端是否显示
 function asideShowBottom() {
@@ -184,8 +192,8 @@ function asideShowBottom() {
             // asideBottom.css('display','none')
         }
     }, 16)
-}
-asideShowBottom()
+};
+asideShowBottom();
 
 // 吸顶
 function xiding() {
@@ -196,9 +204,9 @@ function xiding() {
     var asideNav = $('nav.main div.w div.nav')//ab 没坐标 可以是l0 t0
     var asideLogin = $('nav.top ul.r li.login')//wu
     var asideRegister = $('nav.top ul.r li.register')//wu
-    console.log(asideCart)
+    // console.log(asideCart)
     var showTop
-    window.onscroll = function(){
+    $(window).on('scroll', function () {
         var nowTop = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
         if (nowTop > 800) {
             asideTop.css('top', '0')
@@ -211,26 +219,26 @@ function xiding() {
             })
             asideCartSec.css('left', '-272px')
             asideInput.css({        //改定位input
-                position:'fixed',
-                left:'400px',
-                top:'-25px',
-                zIndex:8
+                position: 'fixed',
+                left: '400px',
+                top: '-25px',
+                zIndex: 8
             })
             asideNav.css({      //改坐标 nav
-                position:'fixed',
-                top:'5px',
-                left:'120px'
+                position: 'fixed',
+                top: '5px',
+                left: '120px'
             })
             asideNav.find('ul.sec').css({
-                display:'none'
+                display: 'none'
             })
-            asideNav.hover(function(){
+            asideNav.hover(function () {
                 asideNav.find('ul.sec').css({
-                    display:'block',
+                    display: 'block',
                 })
-            },function(){
+            }, function () {
                 asideNav.find('ul.sec').css({
-                    display:'none'
+                    display: 'none'
                 })
             })
 
@@ -247,21 +255,113 @@ function xiding() {
                 left: ''
             })
             asideInput.css({        //改定位input
-                position:'relative',
-                top:'',
-                left:'',
-                zIndex:1
+                position: 'relative',
+                top: '',
+                left: '',
+                zIndex: 1
             })
             asideNav.css({      //改定位nav
-                position:'absolute',
-                top:'',
-                left:''
+                position: 'absolute',
+                top: '',
+                left: ''
             })
             asideNav.find('ul.sec').css({
-                display:'block'
+                display: 'block'
             })
         }
-
-    }
+        // console.log('========================')
+    })
 }
-xiding()
+
+xiding();
+
+// 如果cookie有值显示欢迎
+if (document.cookie) {
+    $('a.wel').html('欢迎回来')
+    $('li.leave').css('display', 'block')
+} else {
+    $('a.wel').html('请登录')
+    $('li.leave').css('display', 'none')
+}
+
+// 删除cookie
+function removeCookie(name, path) {
+    var date = new Date()
+    date.setDate(date.getDate() - 100)
+    document.cookie = name + '="";path=' + path + ';expires=' + date;
+}
+$('li.leave a.leave').click(function () {
+    removeCookie('userid', '/')
+    $('a.wel').html('请登录')
+    $('li.leave').css('display', 'none')
+
+})
+
+// 跳转详情页
+$("header div.w div.ab div.search input[type='submit']").click(function () {
+    location.href = './html/goods/goods.html'
+})
+console.log($("header div.w div.ab div.search input[type='submit']"))
+
+
+// aside left 左侧边栏
+function asideright() {
+    $left_lis = $('div.aside aside.left ul li')
+    $div = $('div.middlem')
+
+    function gun() {
+        var nowTop2 = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+        if (nowTop2 > 1800) {
+            $('div.aside aside.left ul').css({
+                left: '5px',
+                zIndex: 16
+            })
+            var win = $(window)
+            for (var i = 0; i < $div.length; i++) {
+                if ($div.eq(i).offset().top >= win.scrollTop() && $div.eq(i).offset().top <= win.scrollTop() + win.height()) {
+                    console.log($('div.aside aside.left'))
+                    $left_lis.removeClass('current')
+                    $left_lis.eq(i).addClass('current')
+                    console.log(win.scrollTop())
+                }
+            }
+        } else {
+            $('div.aside aside.left ul').css({
+                left: '-100px',
+                zIndex: 1
+            })
+        }
+    }
+
+    $(window).on('scroll', gun)
+
+    var idAsideLeft
+    $left_lis.click(function () {
+        var index = $(this).index()
+        var armTop = $div.eq(index).offset().top - 60
+        clearInterval(idAsideLeft)
+        $(window).off('scroll', gun)
+        $left_lis.removeClass('current')
+        $left_lis.eq(index).addClass('current')
+
+        idAsideLeft = setInterval(function () {
+            var nowscrolltop = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+            var step = (armTop - nowscrolltop) / 20;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step)
+            document.body.scrollTop = document.documentElement.scrollTop = nowscrolltop + step;
+            console.log('step：' + step)
+            if (step === 0) {
+                clearInterval(idAsideLeft)
+                $(window).on('scroll', gun)
+            }
+        }, 16)
+    });
+
+    $(window).on('mousewheel', function () {
+        clearInterval(idAsideLeft)
+        $(window).on('scroll', gun)
+
+    })
+
+}
+asideright()

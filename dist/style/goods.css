@@ -369,7 +369,7 @@ nav.top .w ul .write div.two div {
 
 nav.top .w ul .write div.tre {
   width: 174px;
-  left: -117px;
+  left: -126px;
 }
 
 nav.top .w ul .write div.tre div a span {
@@ -383,7 +383,8 @@ nav.top .w ul .write div.tre div a span {
 }
 
 nav.top .w ul .write div.rOne {
-  width: 58px;
+  width: 59px;
+  padding: 5px;
 }
 
 nav.top .w ul .write div.rOne div {
@@ -450,7 +451,7 @@ nav.top .w ul .write div.rTre span {
 
 nav.top .w ul .write div.rFou {
   width: 400px;
-  left: -343px;
+  left: -352px;
   text-align: center;
 }
 
@@ -661,7 +662,6 @@ main div.w div.r div.menu {
 main div.w div.r div.menu span.left {
   height: 50px;
   line-height: 50px;
-  float: left;
   display: inline-block;
   width: 100px;
   text-align: center;

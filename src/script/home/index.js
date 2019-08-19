@@ -276,8 +276,24 @@ function xiding() {
 xiding();
 
 // 如果cookie有值显示欢迎
+console.log(document.cookie)
 if (document.cookie) {
-    $('a.wel').html('欢迎回来')
+    var coo = document.cookie.split('=')[1]
+    console.log(coo)
+    $.ajax({
+        method:'post',
+        url:'./php/index.php',
+        data:{
+            id:coo
+        },
+        success:function(resp){
+            // console.log('成功')
+            $('a.wel').html(resp)
+        },
+        error:function(resp){
+            console.log(resp)
+        }
+    })
     $('li.leave').css('display', 'block')
 } else {
     $('a.wel').html('请登录')

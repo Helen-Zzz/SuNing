@@ -145,7 +145,7 @@ nav.top {
                 }
                 div.tre {
                     width: 174px;
-                    left: -117px;
+                    left: -126px;
                     div {
                         a {
                             span {
@@ -161,7 +161,8 @@ nav.top {
                     }
                 }
                 div.rOne {
-                    width: 58px;
+                    width: 59px;
+                    padding: 5px;
                     div {
                         padding: 0;
                     }
@@ -219,7 +220,7 @@ nav.top {
                 }
                 div.rFou {
                     width: 400px;
-                    left: -343px;
+                    left: -352px;
                     text-align: center;
                     div {
                         figure {
@@ -487,6 +488,7 @@ main{
                 }
                 div.dele{
                     width: 130px;
+                    cursor: pointer;
                     &:hover{
                         color:#f60;
                     }

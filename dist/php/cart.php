@@ -15,7 +15,7 @@
     $conn->query("set names utf8");
     
     $sql = "
-        select `goodsname`,`img`,`describe`,`price`,`count` from `userid_cart`
+        select `goodsname`,`img`,`describe`,`price`,`count`,`id` from `userid_cart`
         where `userid`=$userid
     ";
     $result = $conn->query($sql);

@@ -165,7 +165,7 @@ nav.top .w ul .write div.two div {
 
 nav.top .w ul .write div.tre {
   width: 174px;
-  left: -117px;
+  left: -126px;
 }
 
 nav.top .w ul .write div.tre div a span {
@@ -179,7 +179,8 @@ nav.top .w ul .write div.tre div a span {
 }
 
 nav.top .w ul .write div.rOne {
-  width: 58px;
+  width: 59px;
+  padding: 5px;
 }
 
 nav.top .w ul .write div.rOne div {
@@ -246,7 +247,7 @@ nav.top .w ul .write div.rTre span {
 
 nav.top .w ul .write div.rFou {
   width: 400px;
-  left: -343px;
+  left: -352px;
   text-align: center;
 }
 
@@ -531,6 +532,7 @@ main div.goods ul.goods li div.pay {
 
 main div.goods ul.goods li div.dele {
   width: 130px;
+  cursor: pointer;
 }
 
 main div.goods ul.goods li div.dele:hover {
